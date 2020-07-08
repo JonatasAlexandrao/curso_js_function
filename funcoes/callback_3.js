@@ -1,5 +1,5 @@
 
-
+console.log('--------Map--------')
 const nums = [1,2,3,4,5]
 const dobro = n => n * 2
 console.log(nums.map(dobro))
@@ -19,9 +19,37 @@ const carrinho = [
 ]
 
 const getNome = item => item.nome
-
 const getTotal = item => item.qtde * item.preco
 
 console.log(carrinho.map(getNome))
 console.log(carrinho.map(getTotal))
+
+let linhas = []
+
+linhas.push(['---------------'])
+i=1
+while (i <= 5) {
+  linhas.push([
+      '<teste></teste>'
+  ])
+  i++;              
+}
+
+console.log(linhas)
+
+let linhas2 = []
+
+linhas2.push(['------222------'])
+
+linhas.push(['<teste></teste>'])
+
+// const nums = [1,2,3,4,5]
+// const dobro = n => n * 2
+
+let teste = []+5
+//teste[0] = 1
+const t = (el) => el[el.length] = "5"
+console.log(teste.map(t))
+
+console.log(linhas.length)
 
